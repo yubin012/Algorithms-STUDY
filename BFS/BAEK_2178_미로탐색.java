@@ -54,11 +54,17 @@ public class BAEK_2178_미로탐색 {
 
         BFS(0, 0); // 1,1 에서부터 시작.
 
+        // 인덱스는 원하는 위치에서 각 -1 만큼 해줘야함.
+        // (N,M) 까지의 최단 거리 구하기
         System.out.println(dist[N - 1][M - 1]);
 
     }
 
     static void BFS(int x, int y) {
+        // BFS 는 큐로 구현해야함.
+        // why? 큐는 선입선출의 구조로
+        // 각 계층(너비가 작은 애들 먼저 도달 후) 먼저 거리 계산해주어야함.
+
         Deque<int[]> q = new ArrayDeque<>();
 
         visited[x][y] = true; // 방문처리

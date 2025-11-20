@@ -6,7 +6,6 @@ import java.io.InputStreamReader;
 import java.util.ArrayDeque;
 
 public class BACK_2164_카드2 {
-    // 로테이션 같다 꼭
     public static void main(String[] args) throws IOException {
 
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
