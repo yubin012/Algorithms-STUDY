@@ -26,7 +26,7 @@ public class BAEK_11650_좌표정렬 {
         // Collections 와 Arrays 의 차이 : arr 이 List 이냐 배열이냐
         Collections.sort(arr, (a, b) -> {
             if (a[0] == b[0]) {
-                return a[1] - b[1]; // x값이 같을땐 y 같으로 정렬 : a[1]이 크면 a[1] 은 뒤에 배치됨.
+                return a[1] - b[1]; // x값이 같을땐 y 값으로 정렬 : a[1]이 크면 a[1] 은 뒤에 배치됨.
             }
             return a[0] - b[0];
         });
